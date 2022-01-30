@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../scss/variables/colors';
+@import '../../scss/variables/colors';
 
 .bg-default {
   background: #f8f9fa !important;
@@ -73,8 +73,7 @@ export default {
   position: fixed;
   width: 100%;
   text-transform: uppercase;
-  border-bottom: 2px solid $green;
-  box-shadow: 0 1px 5px grey;
+  border-bottom: 3px solid $green;
   z-index: 4;
 
   a {
