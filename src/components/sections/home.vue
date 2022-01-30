@@ -2,6 +2,7 @@
   <section class="home">
     <Particles
       id="tsparticles"
+      class="home__particles"
       :options="{
         fpsLimit: 60,
         interactivity: {
@@ -46,16 +47,19 @@
             value: 0.5
           }
         },
-        detectRetina: true
+        detectRetina: true,
+        fullScreen: {
+          enable: false
+        }
       }"
     />
-    <div className="home__title">
-      <h1>Hello, I'm <span className="home__name">Connor Bean</span>.</h1>
+    <div class="home__title container">
+      <h1>Hello, I'm <span class="home__name">Connor Bean</span>.</h1>
       <h1>I'm a full-stack software developer.</h1>
       <a
         href="#about"
         type="button"
-        className="home__btn"
+        class="home__btn"
       >
         Learn about me
       </a>
@@ -65,18 +69,21 @@
 
 <script>
 export default {
-  name: 'Home',
-  components: {
-  }
+  name: 'Home'
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../scss/variables/colors';
 
 .home {
   height: 100vh;
   background-color: #252934;
+
+  &__particles {
+    width: 100%;
+    height: 100%;
+  }
 
   &__title {
     position: absolute;

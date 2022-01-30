@@ -1,12 +1,12 @@
 <template>
-  <nav className="navbar navbar-expand-md bg-default">
-    <div className="container-fluid">
+  <nav class="navbar navbar-expand-md bg-default">
+    <div class="container-fluid container">
       <a
-        className="navbar-brand"
+        class="navbar-brand"
         href="#home"
       >Connor</a>
       <button
-        className="navbar-toggler collapsed"
+        class="navbar-toggler collapsed"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -14,39 +14,39 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="icon-bar" />
-        <span className="icon-bar" />
-        <span className="icon-bar" />
+        <span class="icon-bar" />
+        <span class="icon-bar" />
+        <span class="icon-bar" />
       </button>
       <div
         id="navbarNav"
-        className="collapse navbar-collapse"
+        class="collapse navbar-collapse"
       >
-        <ul className="navbar-nav">
-          <li className="nav-item">
+        <ul class="navbar-nav">
+          <li class="nav-item">
             <a
-              className="nav-link"
+              class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
             >Home</a>
           </li>
-          <li className="nav-item">
+          <li class="nav-item">
             <a
-              className="nav-link"
+              class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
             >About</a>
           </li>
-          <li className="nav-item">
+          <li class="nav-item">
             <a
-              className="nav-link"
+              class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
             >Projects</a>
           </li>
-          <li className="nav-item">
+          <li class="nav-item">
             <a
-              className="nav-link"
+              class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
             >Contact</a>
@@ -68,8 +68,6 @@ export default {
 
 .bg-default {
   background: #f8f9fa !important;
-  padding-left: 10%;
-  padding-right: 10%;
   position: fixed;
   width: 100%;
   text-transform: uppercase;
