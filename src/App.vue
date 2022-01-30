@@ -1,13 +1,16 @@
 <template>
   <nav-bar />
+  <home />
 </template>
 
 <script>
-import NavBar from './components/nav-bar.vue';
+import Home from './components/sections/home.vue';
+import NavBar from './components/sections/nav-bar.vue';
 
 export default {
   name: 'App',
   components: {
+    Home,
     NavBar
   }
 }
