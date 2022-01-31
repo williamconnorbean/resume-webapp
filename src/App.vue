@@ -2,19 +2,22 @@
   <nav-bar />
   <home />
   <about />
+  <work-experience />
 </template>
 
 <script>
 import About from './components/sections/about.vue';
 import Home from './components/sections/home.vue';
 import NavBar from './components/sections/nav-bar.vue';
+import WorkExperience from './components/sections/work-experience.vue';
 
 export default {
   name: 'App',
   components: {
     About,
     Home,
-    NavBar
+    NavBar,
+    WorkExperience
   }
 }
 </script>
