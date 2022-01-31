@@ -1,0 +1,8 @@
+@import '../variables/colors';
+
+@mixin section-title {
+  color: $med-grey;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid $green;
+  margin-bottom: 2rem;
+}

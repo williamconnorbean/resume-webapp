@@ -1,0 +1,141 @@
+<template>
+  <div class="job-description">
+    <div>
+      <div class="job-description__title-container">
+        <h3 class="job-description__title">
+          {{ jobTitle }}
+        </h3>
+        <p class="job-description__date--desktop">
+          {{ startMonthAndYear }} - {{ endMonthAndYear }}
+        </p>
+      </div>
+      <h4 class="job-description__company">
+        {{ companyName }}
+      </h4>
+      <p class="job-description__date--mobile">
+        {{ startMonthAndYear }} - {{ endMonthAndYear }}
+      </p>
+      <ul class="job-description__desc">
+        <li
+          v-for="(actionPoint, index) in description"
+          :key="index"
+        >
+          {{ actionPoint }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<script>
+import { format } from 'date-fns-tz';
+
+export default {
+  name: 'JobDescription',
+  props: {
+    jobTitle: {
+      type: String,
+      required: true
+    },
+    companyName: {
+      type: String,
+      required: true
+    },
+    startDate: {
+      type: Date,
+      required: true
+    },
+    endDate: {
+      type: Date,
+      required: true
+    },
+    description: {
+      type: Array,
+      required: false,
+      default: () => []
+    }
+  },
+  setup(props) {
+    const startMonthAndYear = format(props.startDate, 'MMMM yyyy');
+    const endMonthAndYear = format(props.endDate, 'MMMM yyyy');
+
+    return {
+      startMonthAndYear,
+      endMonthAndYear
+    };
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import '../../scss/variables/colors';
+@import '../../scss/variables/screen-sizes';
+
+.job-description {
+  ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: $green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $green;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__company {
+    font-size: 18px;
+    color: $med-grey;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__desc {
+    padding-left: 1rem;
+  }
+
+  @media (min-width: $md) {
+    &__title-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__date {
+      &--mobile {
+        display: none;
+      }
+      
+      &--desktop {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+
+    &__desc {
+      padding-left: 2rem;
+    }
+  }
+}
+</style>

@@ -3,9 +3,9 @@
     id="about"
     class="about container"
   >
-    <h1 class="about__title">
+    <h2 class="about__title">
       About me
-    </h1>
+    </h2>
     <div class="about__info">
       <img
         src="../../assets/headshot.png"
@@ -40,19 +40,14 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/variables/colors';
 @import '../../scss/variables/screen-sizes';
+@import '../../scss/mixins/typography';
+@import '../../scss/mixins/layout';
 
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-margin-top: 5rem;
-  margin-top: 2rem;
+  @include section;
 
   &__title {
-    color: $med-grey;
-    padding-bottom: 0.5rem;
-    border-bottom: 4px solid $green;
-    margin-bottom: 2rem;
+    @include section-title;
   }
 
   &__headshot {
@@ -64,7 +59,7 @@ export default {
 
   &__btn {
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     border: 2px solid $green;
     text-decoration: none;
     color: $med-grey;
