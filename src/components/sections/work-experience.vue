@@ -12,30 +12,39 @@
         :key="index"
         class="work-experience__job-container"
       >
-        <job-description
-          :job-title="job.title"
-          :company-name="job.companyName"
-          :start-date="new Date(job.startDate)"
-          :end-date="new Date(job.endDate)"
-          :description="job.description"
-        />
+        <div class="work-experience__icon">
+          <icon type="briefcase" />
+        </div>
+        <div class="work-experience__job">
+          <job-description
+            :job-title="job.title"
+            :type="job.type"
+            :company-name="job.companyName"
+            :start-date="new Date(job.startDate)"
+            :end-date="new Date(job.endDate)"
+            :description="job.description"
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Icon from '../shared/icon.vue';
 import JobDescription from '../shared/job-description.vue';
 
 export default {
   name: 'WorkExperience',
   components: {
+    Icon,
     JobDescription
   },
   setup() {
     const jobs = [
       {
-        title: 'Software Developer (Co-op Work Term III)',
+        title: 'Software Developer',
+        type: 'Internship',
         companyName: 'Bold Commerce',
         startDate: 'September 2019',
         endDate: 'December 2019',
@@ -46,7 +55,8 @@ export default {
         ]
       },
       {
-        title: 'Software Developer (Co-op Work Term II)',
+        title: 'Software Developer',
+        type: 'Internship',
         companyName: 'Red River Mutual',
         startDate: 'January 2019',
         endDate: 'May 2019',
@@ -57,7 +67,8 @@ export default {
         ]
       },
       {
-        title: 'Software Developer (Co-op Work Term I)',
+        title: 'Systems Developer',
+        type: 'Internship',
         companyName: 'Payworks',
         startDate: 'May 2018',
         endDate: 'August 2018',
@@ -79,6 +90,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/mixins/typography';
 @import '../../scss/mixins/layout';
+@import '../../scss/variables/screen-sizes';
 
 .work-experience {
   @include section;
@@ -90,11 +102,41 @@ export default {
   &__jobs {
     width: 100%;
     text-align: left;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      left: 24px;
+      top: 0;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    position: absolute;
+    left: 0;
   }
 
   &__job-container {
+    position: relative;
+
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__job {
+    padding-left: 4rem;
+  }
+
+  @media (min-width: $md) {
+    &__job {
+      padding-left: 5rem;
     }
   }
 }

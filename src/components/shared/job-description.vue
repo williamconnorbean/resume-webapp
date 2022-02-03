@@ -10,7 +10,7 @@
         </p>
       </div>
       <h4 class="job-description__company">
-        {{ companyName }}
+        {{ companyName }} &#183; {{ type }}
       </h4>
       <p class="job-description__date--mobile">
         {{ startMonthAndYear }} - {{ endMonthAndYear }}
@@ -34,6 +34,10 @@ export default {
   name: 'JobDescription',
   props: {
     jobTitle: {
+      type: String,
+      required: true
+    },
+    type: {
       type: String,
       required: true
     },
@@ -89,13 +93,11 @@ export default {
     font-size: 18px;
     color: $green;
     font-weight: bold;
-    text-transform: uppercase;
   }
 
   &__company {
-    font-size: 18px;
+    font-size: 16px;
     color: $med-grey;
-    text-transform: uppercase;
   }
 
   &__date {
@@ -118,10 +120,6 @@ export default {
       justify-content: space-between;
     }
 
-    &__title {
-      margin-bottom: 0;
-    }
-
     &__date {
       &--mobile {
         display: none;
@@ -131,10 +129,6 @@ export default {
         display: block;
         margin-bottom: 0;
       }
-    }
-
-    &__desc {
-      padding-left: 2rem;
     }
   }
 }
