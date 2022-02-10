@@ -3,6 +3,7 @@
   <home />
   <about />
   <work-experience />
+  <contact />
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import About from './components/sections/about.vue';
 import Home from './components/sections/home.vue';
 import NavBar from './components/sections/nav-bar.vue';
 import WorkExperience from './components/sections/work-experience.vue';
+import Contact from './components/sections/contact.vue';
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
     About,
     Home,
     NavBar,
-    WorkExperience
+    WorkExperience,
+    Contact
   }
 }
 </script>
