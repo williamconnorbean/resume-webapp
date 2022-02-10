@@ -25,6 +25,7 @@ export default {
 
 .icon {
   display: flex;
+  width: fit-content;
   padding: 0.75rem;
   background-color: $white;
   border-radius: 50%;
