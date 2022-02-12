@@ -22,7 +22,7 @@
       </p>
     </div>
     <a
-      href="https://williamconnorbean.github.io/"
+      :href="pdf"
       target="_blank"
       type="button"
       class="about__btn"
@@ -34,8 +34,15 @@
 </template>
 
 <script>
+import pdf from '../../assets/connor-bean_02-12-2022_resume.pdf';
+
 export default {
-  name: 'About'
+  name: 'About',
+  setup() {
+    return {
+      pdf
+    };
+  }
 }
 </script>
 
