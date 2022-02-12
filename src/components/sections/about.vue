@@ -14,7 +14,8 @@
       >
       <p class="about__description">
         I'm a full-stack software developer specializing in Web-Based Systems, Databases, Networks and Security, and Software Engineering.
-        I've got a strong passion for learning, building, and collaborating in a way that provides the most value to project stakeholders.
+        <br><br>
+        I've got a strong passion for learning and collaborating with teams to build systems that have a direct positive impact on people's everyday lives.
         <br><br>
         Outside of software development you can find me snowboarding, working on my car, and enjoying a casual beer with my
         closest friends.
@@ -27,6 +28,7 @@
       class="about__btn"
     >
       Download my resume
+      <vue-feather type="download" />
     </a>
   </section>
 </template>
@@ -58,6 +60,8 @@ export default {
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     margin-top: 1.5rem;
     border: 2px solid $green;
@@ -66,6 +70,10 @@ export default {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     transition: all 0.3s ease;
+
+    i {
+      margin-left: 0.5rem;
+    }
   }
 
   &__btn:hover {

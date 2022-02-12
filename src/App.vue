@@ -2,8 +2,8 @@
   <nav-bar />
   <home />
   <about />
-  <work-experience />
   <projects />
+  <work-experience />
   <contact />
   <custom-footer />
 </template>
