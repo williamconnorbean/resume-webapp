@@ -65,6 +65,7 @@
         class="home__btn"
       >
         Learn about me
+        <vue-feather type="chevron-right" />
       </a>
     </div>
   </section>
@@ -89,6 +90,9 @@ export default {
   }
 
   &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -103,6 +107,10 @@ export default {
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     font-weight: bold;
     margin-top: 0.5rem;
     border: 2px solid $white;
@@ -111,6 +119,11 @@ export default {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     transition: all 0.3s ease;
+
+    i {
+      margin-left: 0.25rem;
+      transition: transform 0.3s ease;
+    }
   }
 
   &__btn:hover {
@@ -118,6 +131,10 @@ export default {
     border-color: $green;
     color: $white;
     border-radius: 0.5rem;
+
+    i {
+      transform: rotate(90deg);
+    }
   }
 }
 </style>
