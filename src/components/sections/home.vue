@@ -1,5 +1,8 @@
 <template>
-  <section class="home">
+  <section
+    id="home"
+    class="home"
+  >
     <Particles
       id="tsparticles"
       class="home__particles"
