@@ -3,6 +3,7 @@
   <home />
   <about />
   <work-experience />
+  <projects />
   <contact />
   <custom-footer />
 </template>
@@ -11,6 +12,7 @@
 import About from './components/sections/about.vue';
 import Home from './components/sections/home.vue';
 import NavBar from './components/sections/nav-bar.vue';
+import Projects from './components/sections/projects.vue';
 import WorkExperience from './components/sections/work-experience.vue';
 import Contact from './components/sections/contact.vue';
 import CustomFooter from './components/sections/custom-footer.vue';
@@ -21,6 +23,7 @@ export default {
     About,
     Home,
     NavBar,
+    Projects,
     WorkExperience,
     Contact,
     CustomFooter

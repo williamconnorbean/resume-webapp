@@ -44,6 +44,14 @@
               class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
+              @click="goToProjects"
+            >Projects</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
               @click="goToWorkExp"
             >Work Experience</a>
           </li>
@@ -67,12 +75,14 @@ export default {
   setup() {
     const goToHome = () => window.location.href = '#home';
     const goToAbout = () => window.location.href = '#about';
+    const goToProjects = () => window.location.href = '#projects';
     const goToWorkExp = () => window.location.href = '#work-experience';
     const goToContact = () => window.location.href = '#contact';
 
     return {
       goToHome,
       goToAbout,
+      goToProjects,
       goToWorkExp,
       goToContact
     };
@@ -102,7 +112,7 @@ export default {
   justify-content: flex-end;
 
   a {
-    padding: .5rem 1rem;
+    padding: .5rem 0.75rem;
   }
 }
 
