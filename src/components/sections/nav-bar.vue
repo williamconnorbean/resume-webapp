@@ -102,9 +102,14 @@ export default {
   z-index: 4;
 
   a {
-    color: #383838;
+    color: $med-grey;
     font-weight: 600;
     cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover, &:focus {
+      color: $green;
+    }
   }
 }
 

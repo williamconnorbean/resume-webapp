@@ -1,35 +1,38 @@
 <template>
-  <section
-    id="projects"
-    class="projects container"
-  >
-    <h2 class="projects__title">
-      Projects
-    </h2>
-    <div
-      class="projects__container"
+  <fade-in-section>
+    <section
+      id="projects"
+      class="projects container"
     >
+      <h2 class="projects__title">
+        Projects
+      </h2>
       <div
-        v-for="project in projects"
-        :key="project.id"
-        class="projects__tile"
+        class="projects__container"
       >
-        <project-tile
-          :id="project.id"
-          :name="project.name"
-          :thumbnail="project.thumbnail"
-          :image="project.image"
-          :link="project.link"
-          :tech="project.tech"
-          :description="project.description"
-        />
+        <div
+          v-for="project in projects"
+          :key="project.id"
+          class="projects__tile"
+        >
+          <project-tile
+            :id="project.id"
+            :name="project.name"
+            :thumbnail="project.thumbnail"
+            :image="project.image"
+            :link="project.link"
+            :tech="project.tech"
+            :description="project.description"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </fade-in-section>
 </template>
 
 <script>
 import ProjectTile from '../shared/project-tile.vue';
+import FadeInSection from '../shared/fade-in-section.vue';
 import summervibes from '../../assets/summervibes.png';
 import svDetails from '../../assets/sv-details.png'
 import retroroasters from '../../assets/retro-roasters.png'
@@ -38,7 +41,8 @@ import rrDetails from '../../assets/rr-details.png'
 export default {
   name: 'Projects',
   components: {
-    ProjectTile
+    ProjectTile,
+    FadeInSection
   },
   setup() {
     const projects = [
