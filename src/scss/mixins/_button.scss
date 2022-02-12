@@ -1,0 +1,17 @@
+@mixin primary-button($color, $hover-color) {
+  font-weight: bold;
+  margin-top: 1rem;
+  border: 2px solid $green;
+  text-decoration: none;
+  color: $color;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+
+  &:hover, &:active {
+    background-color: $green;
+    color: $hover-color;
+    border-radius: 0.5rem;
+  }
+}
