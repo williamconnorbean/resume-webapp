@@ -13,7 +13,7 @@
       <div class="contact__social-item">
         <Icon type="mail" />
         <p class="contact__social-header">
-          Shoot me an email
+          Email me
         </p>
         <a href="mailto:williamconnorbean@gmail.com">williamconnorbean@gmail.com</a>
       </div>
@@ -35,7 +35,7 @@
 import Icon from '../shared/icon.vue';
 
 export default {
-  name: 'WorkExperience',
+  name: 'Contact',
   components: {
     Icon
   }
@@ -45,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/mixins/typography';
 @import '../../scss/mixins/layout';
-@import '../../scss/variables/screen-sizes';
+@import '../../scss/variables/colors';
 
 .contact {
   @include section;
@@ -57,6 +57,7 @@ export default {
 
   &__header {
     margin-bottom: 2rem;
+    color: $med-grey;
   }
 
   &__social-container {

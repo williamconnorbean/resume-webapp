@@ -4,6 +4,7 @@
   <about />
   <work-experience />
   <contact />
+  <custom-footer />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Home from './components/sections/home.vue';
 import NavBar from './components/sections/nav-bar.vue';
 import WorkExperience from './components/sections/work-experience.vue';
 import Contact from './components/sections/contact.vue';
+import CustomFooter from './components/sections/custom-footer.vue';
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     Home,
     NavBar,
     WorkExperience,
-    Contact
+    Contact,
+    CustomFooter
   }
 }
 </script>
