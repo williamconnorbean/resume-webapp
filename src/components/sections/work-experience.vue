@@ -1,44 +1,48 @@
 <template>
-  <section
-    id="work-experience"
-    class="work-experience container"
-  >
-    <h2 class="work-experience__title">
-      Work experience
-    </h2>
-    <div class="work-experience__jobs">
-      <div
-        v-for="(job, index) in jobs"
-        :key="index"
-        class="work-experience__job-container"
-      >
-        <div class="work-experience__icon">
-          <icon type="briefcase" />
-        </div>
-        <div class="work-experience__job">
-          <job-description
-            :job-title="job.title"
-            :type="job.type"
-            :company-name="job.companyName"
-            :start-date="new Date(job.startDate)"
-            :end-date="new Date(job.endDate)"
-            :description="job.description"
-          />
+  <fade-in-section>
+    <section
+      id="work-experience"
+      class="work-experience container"
+    >
+      <h2 class="work-experience__title">
+        Work experience
+      </h2>
+      <div class="work-experience__jobs">
+        <div
+          v-for="(job, index) in jobs"
+          :key="index"
+          class="work-experience__job-container"
+        >
+          <div class="work-experience__icon">
+            <icon type="briefcase" />
+          </div>
+          <div class="work-experience__job">
+            <job-description
+              :job-title="job.title"
+              :type="job.type"
+              :company-name="job.companyName"
+              :start-date="new Date(job.startDate)"
+              :end-date="new Date(job.endDate)"
+              :description="job.description"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </fade-in-section>
 </template>
 
 <script>
 import Icon from '../shared/icon.vue';
 import JobDescription from '../shared/job-description.vue';
+import FadeInSection from '../shared/fade-in-section.vue';
 
 export default {
   name: 'WorkExperience',
   components: {
     Icon,
-    JobDescription
+    JobDescription,
+    FadeInSection
   },
   setup() {
     const jobs = [

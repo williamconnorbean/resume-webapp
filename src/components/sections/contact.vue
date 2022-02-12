@@ -1,42 +1,46 @@
 <template>
-  <section
-    id="contact"
-    class="contact container"
-  >
-    <h2 class="contact__title">
-      Contact
-    </h2>
-    <h3 class="contact__header">
-      Here are some easy ways to reach out.
-    </h3>
-    <div class="contact__social-container">
-      <div class="contact__social-item">
-        <Icon type="mail" />
-        <p class="contact__social-header">
-          Email me
-        </p>
-        <a href="mailto:williamconnorbean@gmail.com">williamconnorbean@gmail.com</a>
+  <fade-in-section>
+    <section
+      id="contact"
+      class="contact container"
+    >
+      <h2 class="contact__title">
+        Contact
+      </h2>
+      <h3 class="contact__header">
+        Here are some easy ways to reach out.
+      </h3>
+      <div class="contact__social-container">
+        <div class="contact__social-item">
+          <Icon type="mail" />
+          <p class="contact__social-header">
+            Email me
+          </p>
+          <a href="mailto:williamconnorbean@gmail.com">williamconnorbean@gmail.com</a>
+        </div>
+        <div class="contact__social-item">
+          <Icon type="linkedin" />
+          <p class="contact__social-header">
+            Let's connect
+          </p>
+          <a
+            href="https://ca.linkedin.com/in/connor-bean-160987170"
+            target="_blank"
+          >LinkedIn Profile</a>
+        </div>
       </div>
-      <div class="contact__social-item">
-        <Icon type="linkedin" />
-        <p class="contact__social-header">
-          Let's connect
-        </p>
-        <a
-          href="https://ca.linkedin.com/in/connor-bean-160987170"
-          target="_blank"
-        >LinkedIn Profile</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </fade-in-section>
 </template>
 
 <script>
+import FadeInSection from '../shared/fade-in-section.vue';
 import Icon from '../shared/icon.vue';
 
 export default {
   name: 'Contact',
   components: {
+    FadeInSection,
     Icon
   }
 }
