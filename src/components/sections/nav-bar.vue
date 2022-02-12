@@ -3,7 +3,7 @@
     <div class="container-fluid container">
       <a
         class="navbar-brand"
-        href="#home"
+        href="/"
       >Connor</a>
       <button
         class="navbar-toggler collapsed"
