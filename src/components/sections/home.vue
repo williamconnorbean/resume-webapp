@@ -78,7 +78,7 @@ export default {
 
 .home {
   height: 100vh;
-  background-color: #252934;
+  background-color: $navy;
 
   &__particles {
     width: 100%;
