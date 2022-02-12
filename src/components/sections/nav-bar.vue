@@ -28,6 +28,7 @@
               class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
+              @click="goToHome"
             >Home</a>
           </li>
           <li class="nav-item">
@@ -35,6 +36,7 @@
               class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
+              @click="goToAbout"
             >About</a>
           </li>
           <li class="nav-item">
@@ -42,13 +44,15 @@
               class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
-            >Projects</a>
+              @click="goToWorkExp"
+            >Work Experience</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
               data-bs-toggle="collapse"
               data-bs-target=".navbar-collapse.show"
+              @click="goToContact"
             >Contact</a>
           </li>
         </ul>
@@ -59,7 +63,20 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  setup() {
+    const goToHome = () => window.location.href = '#home';
+    const goToAbout = () => window.location.href = '#about';
+    const goToWorkExp = () => window.location.href = '#work-experience';
+    const goToContact = () => window.location.href = '#contact';
+
+    return {
+      goToHome,
+      goToAbout,
+      goToWorkExp,
+      goToContact
+    };
+  }
 }
 </script>
 
