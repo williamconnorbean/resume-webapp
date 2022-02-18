@@ -58,7 +58,7 @@
     />
     <div class="home__title container">
       <h1>Hello, I'm <span class="home__name">Connor Bean</span>.</h1>
-      <h1>I'm a full-stack software developer.</h1>
+      <h1>I'm a Full Stack Software Developer.</h1>
       <a
         href="#about"
         type="button"
