@@ -1,7 +1,8 @@
 <template>
-  <fade-in-section>
+  <fade-in-section 
+    id="work-experience"
+  >
     <section
-      id="work-experience"
       class="work-experience container"
     >
       <h2 class="work-experience__title">

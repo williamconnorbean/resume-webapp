@@ -1,7 +1,8 @@
 <template>
-  <fade-in-section>
+  <fade-in-section
+    id="contact"
+  >
     <section
-      id="contact"
       class="contact container"
     >
       <h2 class="contact__title">
