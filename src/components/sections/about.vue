@@ -1,7 +1,8 @@
 <template>
-  <fade-in-section>
+  <fade-in-section 
+    id="about"
+  >
     <section
-      id="about"
       class="about container"
     >
       <h2 class="about__title">
