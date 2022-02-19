@@ -54,7 +54,7 @@ export default {
     },
     image: {
       type: String,
-      required: true
+      default: null
     },
     link: {
       type: String,
@@ -79,7 +79,9 @@ export default {
   position: relative;
   height: 275px;
   width: 275px;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0.25rem;
+  box-shadow: 0 2px 8px 0px grey;
+  border-radius: 0.5rem;
 
   &__img {
     border-radius: 0.5rem;
@@ -101,7 +103,7 @@ export default {
     border: 2px solid $green;
     text-decoration: none;
     color: $white;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
     font-size: 1.25rem;
     transition: all 0.3s ease;
     background-color: transparent;

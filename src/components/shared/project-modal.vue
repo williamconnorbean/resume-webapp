@@ -22,10 +22,14 @@
           </button>
         </div>
         <img
+          v-if="image"
           class="project-modal__img-heading"
           :src="image"
         >
-        <div class="modal-body project-modal__body">
+        <div
+          class="modal-body project-modal__body"
+          :class="{'project-modal__body--no-image': !image}"
+        >
           <h5 class="project-modal__title">
             {{ title }}
           </h5>
@@ -65,7 +69,7 @@ export default {
     },
     image: {
       type: String,
-      required: true
+      default: null
     },
     title: {
       type: String,
@@ -110,18 +114,24 @@ export default {
   }
 
   &__img-heading {
-    height: 275px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
     object-position: top;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   &__body {
     background-color: $white;
     text-align: left;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &--no-image {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
   }
 
   &__title {
@@ -151,6 +161,7 @@ export default {
 
   &__description {
     margin-top: 1rem;
+    color: $med-grey-v2;
   }
 
   &__footer {
