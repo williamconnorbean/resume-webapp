@@ -32,12 +32,16 @@
 </template>
 
 <script>
-import ProjectTile from '../shared/project-tile.vue';
 import FadeInSection from '../shared/fade-in-section.vue';
-import summervibes from '../../assets/summervibes.png';
-import svDetails from '../../assets/sv-details.png'
+import markdownResume from '../../assets/markdown-resume.png';
+import musicEqualizer from '../../assets/music-equalizer.png';
+import personalWebsite from '../../assets/personal-website.png';
+import ProjectTile from '../shared/project-tile.vue';
 import retroroasters from '../../assets/retro-roasters.png'
-import rrDetails from '../../assets/rr-details.png'
+import rlModel from '../../assets/rl-model.png';
+import rrDetails from '../../assets/rr-detailed-image.png';
+import summervibes from '../../assets/summervibes.png';
+import svDetails from '../../assets/sv-details.png';
 
 export default {
   name: 'Projects',
@@ -70,8 +74,8 @@ export default {
       {
         id: "mv",
         name: "Music Visualizer",
-        thumbnail: summervibes,
-        image: svDetails,
+        thumbnail: musicEqualizer,
+        image: null,
         link: "",
         tech: "Arduino / C++",
         description: `Arduino project that flashes individually addressable LEDs to various
@@ -81,8 +85,8 @@ export default {
       {
         id: "website",
         name: "Personal Website",
-        thumbnail: summervibes,
-        image: svDetails,
+        thumbnail: personalWebsite,
+        image: null,
         link: "",
         tech: "Vue.js",
         description: `A personal portfolio where you can learn a bit about me. Yup, the one you're looking at.
@@ -91,8 +95,8 @@ export default {
       {
         id: "gpr",
         name: "GitHub Pages Resume",
-        thumbnail: summervibes,
-        image: svDetails,
+        thumbnail: markdownResume,
+        image: null,
         link: "https://github.com/williamconnorbean/williamconnorbean.github.io",
         tech: "Markdown / Jekyll",
         description: `Tutorial on how to host and format a resume using Markdown, GitHub Pages,
@@ -102,8 +106,8 @@ export default {
       {
         id: "qlearn",
         name: "Q-Learning",
-        thumbnail: summervibes,
-        image: svDetails,
+        thumbnail: rlModel,
+        image: null,
         link: "https://github.com/williamconnorbean/Q-Learning",
         tech: "Python / OpenAI",
         description: `A demonstration of the reinforcement learning technique Q-Learning.
