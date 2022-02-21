@@ -6,14 +6,14 @@
           {{ jobTitle }}
         </h3>
         <p class="job-description__date--desktop">
-          {{ startMonthAndYear }} - {{ endMonthAndYear }}
+          {{ startMonthAndYear }} - {{ endMonthAndYear ?? 'Present' }}
         </p>
       </div>
       <h4 class="job-description__company">
         {{ companyName }} &#183; {{ type }}
       </h4>
       <p class="job-description__date--mobile">
-        {{ startMonthAndYear }} - {{ endMonthAndYear }}
+        {{ startMonthAndYear }} - {{ endMonthAndYear ?? 'Present' }}
       </p>
       <ul class="job-description__desc">
         <li
@@ -51,7 +51,7 @@ export default {
     },
     endDate: {
       type: Date,
-      required: true
+      default: null
     },
     description: {
       type: Array,
@@ -61,7 +61,7 @@ export default {
   },
   setup(props) {
     const startMonthAndYear = format(props.startDate, 'MMMM yyyy');
-    const endMonthAndYear = format(props.endDate, 'MMMM yyyy');
+    const endMonthAndYear = props.endDate ? format(props.endDate, 'MMMM yyyy') : null;
 
     return {
       startMonthAndYear,

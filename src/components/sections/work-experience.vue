@@ -23,7 +23,7 @@
               :type="job.type"
               :company-name="job.companyName"
               :start-date="new Date(job.startDate)"
-              :end-date="new Date(job.endDate)"
+              :end-date="job.endDate ? new Date(job.endDate) : null"
               :description="job.description"
             />
           </div>
@@ -49,6 +49,18 @@ export default {
     const jobs = [
       {
         title: 'Software Developer',
+        type: 'Full-time',
+        companyName: 'Payworks',
+        startDate: 'January 2021',
+        endDate: null,
+        description: [
+          'Lead the technical design and implementation of a CMS-based marketing website.',
+          'Translate and break down marketing/business requirements into functional code in a timely manner.',
+          'Perform routine releases, ensuring quality and robustness as code flows through environments.'
+        ]
+      },
+      {
+        title: 'Software Developer',
         type: 'Internship',
         companyName: 'Bold Commerce',
         startDate: 'September 2019',
@@ -68,7 +80,7 @@ export default {
         description: [
           'Improved code quality of the Guidewire suite, enhancing the overall user experience and workflow.',
           'Created custom ad hoc SQL reports, which were used by the business to collect necessary financial information.',
-          'Communicated effectively with local and remote team members in order to ensure quality of the release of the new farm line of business.'
+          'Communicated effectively with local and remote teams to ensure the quality of the release of a new line of business.'
         ]
       },
       {
@@ -78,9 +90,9 @@ export default {
         startDate: 'May 2018',
         endDate: 'August 2018',
         description: [
-          'Built a web API and front-end UI to allow administrative users to update employee permissions.',
-          'Collaborated with team to come up with a database design for assigning shared calendar view permissions to employees using the application.',
-          'Created postman integration tests and XUnit web API unit tests, which were added to the complete suite of tests to ensure quality of future releases.'
+          'Implemented a web API and front-end UI to allow administrative users to update employee permissions.',
+          'Collaborated with team to design a database for assigning shared calendar view permissions to employees.',
+          'Created postman integration tests and XUnit web API unit tests to ensure the quality of future releases.'
         ]
       }
     ];
