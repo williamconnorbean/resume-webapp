@@ -58,8 +58,7 @@ export default {
         image: svDetails,
         link: "",
         tech: "React / Express / MongoDB",
-        description: `Web application used to track statistics about me and my friends annualcollaborative Spotify playlist.
-          Developed utilizing React with Redux, Express.js and the Spotify Web API.`
+        description: 'The SummerVibes App is a web application used to track statistics about my and my friends\' annual collaborative Spotify playlist.\n\nSince COVID-19, I\'ve extended the app to allow us to remotely vote on songs, where we can \'purge\' out songs that the majority don\'t enjoy.\n\nDeveloped utilizing React with Redux, Express.js, MongoDB, and the Spotify Web API.'
       },
       {
         id: "retroroasters",
@@ -68,8 +67,7 @@ export default {
         image: rrDetails,
         link: "https://retroroasterscoffee.com",
         tech: "Shopify / Vue.js",
-        description: `A website I built for a friend to reach a larger audience for their coffee brand.
-          Built using the Shopify theme development toolkit with Vue.js layered on top.`
+        description: 'A website I built on the Shopify platform for a friend to reach a larger audience for their coffee brand.\n\nBuilt using the Shopify theme development toolkit with Vue.js layered on top.'
       },
       {
         id: "mv",
@@ -78,9 +76,7 @@ export default {
         image: null,
         link: "",
         tech: "Arduino / C++",
-        description: `Arduino project that flashes individually addressable LEDs to various
-          frequencies of music. Created using a spectrum Arduino shield utilizing
-          the Adafruit NeoPixel animation library.`
+        description: 'The Music Visualizer is a fancy name I\'ve given to an Arduino project that flashes individually addressable LEDs to various frequencies of music.\n\nCreated using a spectrum Arduino shield utilizing the Adafruit NeoPixel animation library.'
       },
       {
         id: "website",
@@ -89,8 +85,7 @@ export default {
         image: null,
         link: "",
         tech: "Vue.js",
-        description: `A personal portfolio where you can learn a bit about me. Yup, the one you're looking at.
-          Developed using React and Bootstrap.`
+        description: 'Yup, this is the site you\'re currently browsing! It\'s a personal portfolio where you can learn a bit about me, and the projects I\'ve worked on over the years.\n\nDeveloped using Vue.js and Bootstrap.'
       },
       {
         id: "gpr",
@@ -99,9 +94,7 @@ export default {
         image: null,
         link: "https://github.com/williamconnorbean/williamconnorbean.github.io",
         tech: "Markdown / Jekyll",
-        description: `Tutorial on how to host and format a resume using Markdown, GitHub Pages,
-          and Jekyll, with an emphasis on the technical writing principles stated
-          in Andrew Etter's book Modern Technical Writing.`
+        description: 'A GitHub tutorial on how to host and format your own resume using Markdown, GitHub Pages, and Jekyll.\n\nThe tutorial has a strong emphasis on the technical writing principles stated in Andrew Etter\'s book \"Modern Technical Writing\".'
       },
       {
         id: "qlearn",
@@ -110,8 +103,7 @@ export default {
         image: null,
         link: "https://github.com/williamconnorbean/Q-Learning",
         tech: "Python / OpenAI",
-        description: `A demonstration of the reinforcement learning technique Q-Learning.
-          Implemented using the OpenAI Gym toolkit, using the FrozenLake-v0 environment.`
+        description: 'A python demonstration, accompanied by a technical paper, of the reinforcement learning technique, Q-Learning.\n\nImplemented using the OpenAI Gym toolkit, using the FrozenLake-v0 environment.'
       }
     ];
 
