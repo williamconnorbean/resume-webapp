@@ -58,7 +58,7 @@ export default {
         image: svDetails,
         link: "",
         tech: "React / Express / MongoDB",
-        description: 'The SummerVibes App is a web application used to track statistics about my and my friends\' annual collaborative Spotify playlist.\n\nSince COVID-19, I\'ve extended the app to allow us to remotely vote on songs, where we can \'purge\' out songs that the majority don\'t enjoy.\n\nDeveloped utilizing React with Redux, Express.js, MongoDB, and the Spotify Web API.'
+        description: 'The SummerVibes App is a web application used to track statistics about me and my friends\' annual collaborative Spotify playlist.\n\nSince COVID-19, I\'ve extended the app to allow us to remotely vote on songs, where we can \'purge\' out songs that the majority don\'t enjoy.\n\nDeveloped utilizing React with Redux, Express.js, MongoDB, and the Spotify Web API.'
       },
       {
         id: "retroroasters",

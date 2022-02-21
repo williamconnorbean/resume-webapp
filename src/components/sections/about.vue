@@ -38,7 +38,7 @@
 
 <script>
 import FadeInSection from '../shared/fade-in-section.vue';
-import pdf from '../../assets/connor-bean_02-12-2022_resume.pdf';
+import pdf from '../../assets/connor-bean_resume.pdf';
 
 export default {
   name: 'About',
