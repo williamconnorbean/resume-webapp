@@ -162,6 +162,7 @@ export default {
   &__description {
     margin-top: 1rem;
     color: $med-grey-v2;
+    white-space: pre-wrap;
   }
 
   &__footer {
