@@ -3,7 +3,7 @@
     <div class="container-fluid container">
       <a
         class="navbar-brand"
-        href="/"
+        :href="publicPath"
       >Connor</a>
       <button
         class="navbar-toggler collapsed"
@@ -70,6 +70,8 @@
 </template>
 
 <script>
+import { publicPath } from '../../../vue.config';
+
 export default {
   name: 'NavBar',
   setup() {
@@ -84,7 +86,8 @@ export default {
       goToAbout,
       goToProjects,
       goToWorkExp,
-      goToContact
+      goToContact,
+      publicPath
     };
   }
 }
