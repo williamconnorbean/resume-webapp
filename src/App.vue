@@ -32,6 +32,14 @@ export default {
 </script>
 
 <style>
+body {
+  scroll-behavior: smooth;
+}
+
+a, button {
+  -webkit-appearance: none !important;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

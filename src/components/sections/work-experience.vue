@@ -22,8 +22,8 @@
               :job-title="job.title"
               :type="job.type"
               :company-name="job.companyName"
-              :start-date="new Date(job.startDate)"
-              :end-date="job.endDate ? new Date(job.endDate) : null"
+              :start-date="job.startDate"
+              :end-date="job.endDate"
               :description="job.description"
             />
           </div>

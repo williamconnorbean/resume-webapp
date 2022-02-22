@@ -6,14 +6,14 @@
           {{ jobTitle }}
         </h3>
         <p class="job-description__date--desktop">
-          {{ startMonthAndYear }} - {{ endMonthAndYear ?? 'Present' }}
+          {{ startDate }} - {{ endDate ?? 'Present' }}
         </p>
       </div>
       <h4 class="job-description__company">
         {{ companyName }} &#183; {{ type }}
       </h4>
       <p class="job-description__date--mobile">
-        {{ startMonthAndYear }} - {{ endMonthAndYear ?? 'Present' }}
+        {{ startDate }} - {{ endDate ?? 'Present' }}
       </p>
       <ul class="job-description__desc">
         <li
@@ -28,8 +28,6 @@
 </template>
 
 <script>
-import { format } from 'date-fns-tz';
-
 export default {
   name: 'JobDescription',
   props: {
@@ -46,11 +44,11 @@ export default {
       required: true
     },
     startDate: {
-      type: Date,
+      type: String,
       required: true
     },
     endDate: {
-      type: Date,
+      type: String,
       default: null
     },
     description: {
@@ -58,15 +56,6 @@ export default {
       required: false,
       default: () => []
     }
-  },
-  setup(props) {
-    const startMonthAndYear = format(props.startDate, 'MMMM yyyy');
-    const endMonthAndYear = props.endDate ? format(props.endDate, 'MMMM yyyy') : null;
-
-    return {
-      startMonthAndYear,
-      endMonthAndYear
-    };
   }
 }
 </script>

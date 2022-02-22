@@ -16,7 +16,7 @@ export default {
   name: 'CustomFooter',
   setup() {
     const handleTopScroll = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0 });
     };
 
     return {
