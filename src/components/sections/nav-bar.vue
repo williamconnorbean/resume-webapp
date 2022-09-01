@@ -64,7 +64,7 @@
 
 <script>
 import { onMounted } from '@vue/runtime-core';
-import { publicPath } from '../../../vue.config';
+import { publicPath } from '../../../site.config';
 
 export default {
   name: 'NavBar',
