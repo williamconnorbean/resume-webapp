@@ -1,5 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-md bg-default">
+  <nav
+    id="menu"
+    class="navbar navbar-expand-md bg-default"
+  >
     <div class="container-fluid container">
       <a
         class="navbar-brand"
@@ -26,41 +29,31 @@
           <li class="nav-item">
             <a
               class="nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
-              @click="goToHome"
+              href="#home"
             >Home</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
-              @click="goToAbout"
+              href="#about"
             >About</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
-              @click="goToProjects"
+              href="#projects"
             >Projects</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
-              @click="goToWorkExp"
+              href="#work-experience"
             >Work Experience</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target=".navbar-collapse.show"
-              @click="goToContact"
+              href="#contact"
             >Contact</a>
           </li>
         </ul>
@@ -70,23 +63,38 @@
 </template>
 
 <script>
+import { onMounted } from '@vue/runtime-core';
 import { publicPath } from '../../../vue.config';
 
 export default {
   name: 'NavBar',
   setup() {
-    const goToHome = () => window.location.href = '#home';
-    const goToAbout = () => window.location.href = '#about';
-    const goToProjects = () => window.location.href = '#projects';
-    const goToWorkExp = () => window.location.href = '#work-experience';
-    const goToContact = () => window.location.href = '#contact';
+    onMounted(() => {
+      // close the menu when a link is clicked
+      const navLinks = document.querySelectorAll('.nav-item:not(.dropdown)'); 
+      const menuToggle = document.getElementById('navbarNav');
+      const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false}); 
+      navLinks.forEach( (menuItem) => {
+        menuItem.addEventListener('click', () => {
+          if (menuToggle.classList.contains('show')) {
+            bsCollapse.toggle();
+          }
+        });
+      });
+
+      // close the menu when an outside click occurs
+      document.addEventListener('click', (event) => {
+        const element = document.getElementById('menu');
+
+        if (event.target !== element && !element.contains(event.target)) {
+          if (menuToggle.classList.contains('show')) {
+            bsCollapse.toggle();
+          }
+        }
+      });
+    });
 
     return {
-      goToHome,
-      goToAbout,
-      goToProjects,
-      goToWorkExp,
-      goToContact,
       publicPath
     };
   }
