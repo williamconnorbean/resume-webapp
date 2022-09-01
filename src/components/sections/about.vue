@@ -19,7 +19,7 @@
           <br><br>
           I've got a strong passion for learning and collaborating with teams to build systems that have a direct positive impact on people's everyday lives.
           <br><br>
-          Outside of software development, you can find me snowboarding, disc golfing, traveling, and giving back to my universities co-op program in any way I can.
+          Outside of software development, you can find me snowboarding, disc golfing, traveling, and giving back to my university's co-op program in any way I can.
         </p>
       </div>
       <a
