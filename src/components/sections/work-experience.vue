@@ -55,7 +55,7 @@ export default {
         endDate: null,
         description: [
           'Lead the technical design and implementation of a CMS-based marketing website.',
-          'Translate and break down marketing/business requirements into functional code in a timely manner.',
+          'Developed a suite of tools to enable the marketing team to manage the pages and content of the website themselves.',
           'Perform routine releases, ensuring quality and robustness as code flows through environments.'
         ]
       },
