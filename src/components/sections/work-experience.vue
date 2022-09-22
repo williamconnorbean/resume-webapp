@@ -56,7 +56,7 @@ export default {
         description: [
           'Lead the technical design and implementation of a CMS-based marketing website.',
           'Developed a suite of tools to enable the marketing team to manage the pages and content of the website themselves.',
-          'Perform routine releases, ensuring quality and robustness as code flows through environments.'
+          'Contributed to the creation and development of a JavaScript library for creating accessible web components.'
         ]
       },
       {
