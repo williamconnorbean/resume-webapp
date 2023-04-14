@@ -51,36 +51,36 @@ export default {
         title: 'Software Developer',
         type: 'Full-time',
         companyName: 'Payworks',
-        startDate: 'January 2021',
+        startDate: 'Jan 2021',
         endDate: null,
         description: [
-          'Lead the technical design and implementation of a CMS-based marketing website.',
-          'Developed a suite of tools to enable the marketing team to manage the pages and content of the website themselves.',
-          'Contributed to the creation and development of a JavaScript library for creating accessible web components.'
+          'Spearheaded the design and implementation of a CMS-driven marketing website, resulting in a significant increase in leads.',
+          'Collaborated on creating a JavaScript library for building accessible web components, resulting in a more inclusive user experience.',
+          'Mentored co-op students to enhance their technical abilities and facilitate their integration into a cross-functional team.'
         ]
       },
       {
         title: 'Software Developer',
         type: 'Internship',
         companyName: 'Bold Commerce',
-        startDate: 'September 2019',
-        endDate: 'December 2019',
+        startDate: 'Sept 2019',
+        endDate: 'Dec 2019',
         description: [
-          'Developed and integrated an event-based email system to allow clients to send out upcoming order emails to customers.',
-          'Created front-end interface for viewing and managing third party API keys, which are used by clients to access and manipulate data about their E-commerce store.',
-          'Collaborated with team members during a company-wide hackathon to port over the Subscription app from BigCommerce to Shopify.'
+          'Implemented an event-based email system, enabling clients to send personalized order notifications to customers.',
+          'Developed a user-friendly interface for managing third-party API keys, allowing clients to seamlessly access and manipulate data about their E-commerce store.',
+          'Collaborated with team members during a hackathon to migrate the Subscription app from BigCommerce to Shopify.'
         ]
       },
       {
         title: 'Software Developer',
         type: 'Internship',
         companyName: 'Red River Mutual',
-        startDate: 'January 2019',
+        startDate: 'Jan 2019',
         endDate: 'May 2019',
         description: [
-          'Improved code quality of the Guidewire suite, enhancing the overall user experience and workflow.',
-          'Created custom ad hoc SQL reports, which were used by the business to collect necessary financial information.',
-          'Communicated effectively with local and remote teams to ensure the quality of the release of a new line of business.'
+          'Developed custom SQL reports that provided financial insights to the business, enabling data-driven decision-making.',
+          'Optimized the Guidewire suite by applying best coding practices; improving user experience and workflow.',
+          'Facilitated the successful launch of a new product through effective communication with local and remote teams.'
         ]
       },
       {
@@ -88,11 +88,11 @@ export default {
         type: 'Internship',
         companyName: 'Payworks',
         startDate: 'May 2018',
-        endDate: 'August 2018',
+        endDate: 'Aug 2018',
         description: [
-          'Implemented a web API and front-end UI to allow administrative users to update employee permissions.',
-          'Collaborated with team to design a database for assigning shared calendar view permissions to employees.',
-          'Created postman integration tests and XUnit web API unit tests to ensure the quality of future releases.'
+          'Implemented a web API and front-end UI that enabled administrative users to manage employee permissions efficiently.',
+          'Collaborated with team to design a secure database schema for managing calendar view permissions for employees.',
+          'Created postman integration tests and XUnit web API unit tests, ensuring the quality of future releases.'
         ]
       }
     ];
