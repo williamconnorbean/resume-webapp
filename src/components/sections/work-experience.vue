@@ -48,15 +48,30 @@ export default {
   setup() {
     const jobs = [
       {
+        title: 'Tech Lead, Development',
+        type: 'Full-time',
+        companyName: 'Payworks',
+        startDate: 'May 2024',
+        endDate: null,
+        description: [
+          'Provided technical direction and advisory on migration strategies for the Sugar to Salesforce transition, contributing to a high-impact outcome recognized across the organization.',
+          'Provide daily technical oversight and code review for a team of contracted developers, ensuring alignment with department standards and project goals.',
+          'Lead the squad\'s adoption of Spec-Driven Development using Spec Kit, defining how agentic AI tooling will be leveraged on an upcoming greenfield project.',
+          'Serve as the go-to technical resource for payroll application questions across teams, reducing bottlenecks on domain knowledge.',
+          'Conduct full-cycle technical and behavioral interviews for full-time and co-op positions, serving as a consistent and trusted voice in engineering hiring decisions.',
+          'Expanded QA team capabilities by enabling independent authoring and execution of Playwright tests, extending technical influence across the department.'
+        ]
+      },
+      {
         title: 'Software Developer',
         type: 'Full-time',
         companyName: 'Payworks',
         startDate: 'Jan 2021',
-        endDate: null,
+        endDate: 'May 2024',
         description: [
-          'Spearheaded the design and implementation of a CMS-driven marketing website, resulting in a significant increase in leads.',
-          'Collaborated on creating a JavaScript library for building accessible web components, resulting in a more inclusive user experience.',
-          'Mentored co-op students to enhance their technical abilities and facilitate their integration into a cross-functional team.'
+          'Spearheaded the design and implementation of a CMS-driven marketing website, resulting in a notable increase in leads.',
+          'Mentored 5 co-op students to enhance their technical abilities and facilitate integration into a cross-functional team.',
+          'Collaborated on creating a JavaScript library for building accessible web components, resulting in a more inclusive user experience.'
         ]
       },
       {
@@ -67,8 +82,7 @@ export default {
         endDate: 'Dec 2019',
         description: [
           'Implemented an event-based email system, enabling clients to send personalized order notifications to customers.',
-          'Developed a user-friendly interface for managing third-party API keys, allowing clients to seamlessly access and manipulate data about their E-commerce store.',
-          'Collaborated with team members during a hackathon to migrate the Subscription app from BigCommerce to Shopify.'
+          'Developed a user-friendly interface for managing third-party API keys, allowing clients to access and manipulate data about their E-commerce store seamlessly.'
         ]
       },
       {
@@ -79,12 +93,11 @@ export default {
         endDate: 'May 2019',
         description: [
           'Developed custom SQL reports that provided financial insights to the business, enabling data-driven decision-making.',
-          'Optimized the Guidewire suite by applying best coding practices; improving user experience and workflow.',
-          'Facilitated the successful launch of a new product through effective communication with local and remote teams.'
+          'Optimized the Guidewire suite by applying best coding practices; improving user experience and workflow.'
         ]
       },
       {
-        title: 'Systems Developer',
+        title: 'System Developer',
         type: 'Internship',
         companyName: 'Payworks',
         startDate: 'May 2018',

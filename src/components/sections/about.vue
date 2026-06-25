@@ -15,11 +15,9 @@
           alt="headshot"
         >
         <p class="about__description">
-          I'm a full-stack software developer specializing in Web-Based Systems, Databases, Networks and Security, and Software Engineering.
-          <br><br>
-          I've got a strong passion for learning and collaborating with teams to build systems that have a direct positive impact on people's everyday lives.
-          <br><br>
-          Outside of software development, you can find me snowboarding, disc golfing, traveling, and giving back to my university's co-op program in any way I can.
+          Technical leader who believes the best way to scale impact is through the people around you.
+          <br /><br />
+          Focused on creating growth opportunities for developers, building cross-team knowledge, and staying a step ahead of what the team needs next.
         </p>
       </div>
       <a
